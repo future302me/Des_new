@@ -3,6 +3,7 @@ package com.rztong.mo.rongzitong.ui;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.rztong.mo.rongzitong.R;
 import com.rztong.mo.rongzitong.base.BaseActivity;
@@ -17,7 +18,7 @@ public class SplashActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+//        setContentView(R.layout.activity_splash);
         binding = DataBindingUtil.setContentView(this , R.layout.activity_splash);
         getUserInfo();
     }
@@ -33,5 +34,9 @@ public class SplashActivity extends BaseActivity {
 
     private void setData() {
         binding.setUser(user);
+    }
+
+    public void btnClick(View v){
+        binding.tv.setText("qwer");
     }
 }
