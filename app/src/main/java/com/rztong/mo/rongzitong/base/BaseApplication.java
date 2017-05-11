@@ -3,6 +3,7 @@ package com.rztong.mo.rongzitong.base;
 import android.app.Application;
 import android.content.Context;
 import android.support.compat.BuildConfig;
+import android.support.multidex.MultiDex;
 
 /**
  * Created by royal on 04/05/2017.
@@ -19,6 +20,12 @@ public class BaseApplication extends Application{
     public void onCreate() {
         super.onCreate();
         context = getApplicationContext();
+    }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
     }
 
     public static Context getContext(){
