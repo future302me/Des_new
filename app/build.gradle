@@ -44,17 +44,17 @@ android {
     //签名
     signingConfigs {
         debug {
-//            toreFile file('../../RZTong.keystore')
-//            storePassword 'gW@hY*2isy7$@$uiMQhFrongzi'
+//            toreFile file('RZTong.keystore')
+//            storePassword KEYSTORE_PASSWORD
 //            keyAlias "dongfangrongziwang"
-//            keyPassword 'gW@hY*2isy7$@$uiMQhFrongzi'
+//            keyPassword KEY_PASSWORD
         }
 
         release {
-//            toreFile file('../../RZTong.keystore')
-//            storePassword 'gW@hY*2isy7$@$uiMQhFrongzi'
+//            toreFile file('RZTong.keystore')
+//            storePassword KEYSTORE_PASSWORD
 //            keyAlias "dongfangrongziwang"
-//            keyPassword 'gW@hY*2isy7$@$uiMQhFrongzi'
+//            keyPassword KEY_PASSWORD
         }
     }
 }
