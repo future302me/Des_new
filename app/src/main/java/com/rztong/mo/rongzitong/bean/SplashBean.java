@@ -12,7 +12,7 @@ import com.rztong.mo.rongzitong.BR;
  * Created by royal on 04/05/2017.
  */
 
-public class User extends BaseObservable{
+public class SplashBean extends BaseObservable{
     private String id;
     private String name;
     private String phone;
@@ -47,7 +47,4 @@ public class User extends BaseObservable{
         notifyPropertyChanged(BR.phone);
     }
 
-    public void simpleOnClick(View v,User user){
-        user.setName("111");
-    }
 }

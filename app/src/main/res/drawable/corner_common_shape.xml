@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 圆角灰边灰底 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 实心 -->
+    <solid android:color="#6f4B4B4B" />
+    <!-- 描边 -->
+    <stroke android:width="0px" />
+    <!-- 圆角 -->
+    <corners android:radius="3dp" />
+
+</shape>
